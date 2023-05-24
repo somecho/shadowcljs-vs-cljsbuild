@@ -5,7 +5,8 @@
 	"scripts": {
 		"compile": "shadow-cljs compile core",
 		"release": "shadow-cljs release core",
-		"cljsbuild": "lein cljsbuild once"
+		"cljsbuild": "lein cljsbuild once",
+		"dev":"cd app && yarn dev --host"
 	},
   "devDependencies": {
     "shadow-cljs": "^2.23.3"
