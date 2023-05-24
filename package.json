@@ -1,0 +1,13 @@
+{
+  "name": "testlib",
+  "version": "0.0.1",
+  "private": true,
+	"scripts": {
+		"compile": "shadow-cljs compile core",
+		"release": "shadow-cljs release core",
+		"cljsbuild": "lein cljsbuild once"
+	},
+  "devDependencies": {
+    "shadow-cljs": "^2.23.3"
+  }
+}

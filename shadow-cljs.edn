@@ -1,0 +1,18 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+
+ :builds
+ {:core
+  {:target :esm
+   :module-loader true
+   :js-options {:js-provider :import}
+   :output-dir "app/lib/shadow"
+   ; :compiler-options {:optimizations :whitespace}
+   ; :output-to "app/lib/shadow"
+   :modules {:main {:entries [testlib.core]}}}}}
